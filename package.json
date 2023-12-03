@@ -1,0 +1,22 @@
+{
+  "name": "santa-chatbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdithyaBNayak/santa-chatbot.git"
+  },
+  "author": "AdithyaBNayak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdithyaBNayak/santa-chatbot/issues"
+  },
+  "homepage": "https://github.com/AdithyaBNayak/santa-chatbot#readme",
+  "dependencies": {
+    "serverless": "^3.31.0"
+  }
+}
