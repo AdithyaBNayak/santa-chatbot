@@ -1,4 +1,5 @@
 import json
+import boto3
 
 
 def hello(event, context):
@@ -6,6 +7,8 @@ def hello(event, context):
         "message": "Go Serverless v1.0! Your function executed successfully!",
         "input": event
     }
+    boto3_version = boto3.__version__
+    print(f"Boto3 Version: {boto3_version}")
 
     response = {
         "statusCode": 200,
