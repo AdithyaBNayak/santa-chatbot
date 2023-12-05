@@ -1,0 +1,25 @@
+name: chatbot-api
+schema: backend\schema.graphql
+authenticationType: API_KEY
+mappingTemplates:
+  - type: Mutation
+    request: false
+    response: false
+    dataSource: chatbot
+    field: addMessage
+  - type: Query
+    request: false
+    response: false
+    dataSource: chatbot
+    field: getMessage  
+
+apikeys:
+  - name: my-api-key
+    descrption: "Temp Security for API"
+
+dataSources:
+  # Products
+  - type: AWS_LAMBDA
+    name: chatbot
+    config: 
+      functionName: chatbot       

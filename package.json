@@ -18,6 +18,6 @@
   "homepage": "https://github.com/AdithyaBNayak/santa-chatbot#readme",
   "dependencies": {
     "serverless": "^3.31.0",
-    "serverless-appsync-plugin": "^2.5.2"
+    "serverless-appsync-plugin": "^1.12.1"
   }
 }

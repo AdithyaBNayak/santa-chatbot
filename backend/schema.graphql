@@ -3,14 +3,14 @@ schema {
     mutation: Mutation
 }
 
-type Query {
+type Query{
     getMessage(id: String): Message
 }
 
-type Mutation {
+type Mutation{
     addMessage(id: String): Message
 }
 
-type Message {
+type Message{
     id: String
 }
