@@ -9,7 +9,7 @@ type Query{
 }
 
 type Mutation{
-    addMessage(id: String): Message
+    addMessage(prompt: String): Message
 }
 
 type Subscription {
@@ -17,5 +17,6 @@ type Subscription {
 }
 
 type Message{
-    id: String
+    response: String
+    createdAt: String
 }
