@@ -8,6 +8,11 @@ provider:
   stage: dev
   region: us-east-1
 
+  iam:
+    role:
+      managedPolicies:
+        - arn:aws:iam::aws:policy/AdministratorAccess
+
 plugins:
    - serverless-appsync-plugin
 
@@ -46,8 +51,10 @@ custom:
 #    - include-me-dir/**
 
 functions:
-  chatbot:
-    handler: backend/handler.hello
+  bedrock:
+    handler: genAI/bedrock.handler
+    name: santa-bot-bedrock-handler
+    timeout: 600
     # events:
     #  - httpApi:
     #      path: /postMessage
